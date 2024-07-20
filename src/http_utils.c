@@ -140,6 +140,8 @@ char *get_http_code_name(int code)
 			return "HTTP Version Not Supported";
 		case 511:
 			return "Network Authentication Required";
+		case 767:
+			return "Power Purge ERROR!";
 		default:
 			return "UNKNOWN";
 	}
