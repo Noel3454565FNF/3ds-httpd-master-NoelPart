@@ -12,7 +12,7 @@ void manual(int page) {
 	manual[4] = "SDMC Handler\nPath: /sdcard/\nDescription: Returns content of requested file in SD Card with content-type text/html, if file is missing returns 404. Path starts at SDMC root";
 	manual[5] = "Memory RW Handler\nPath: /readmem/ || /writemem/\nDescription: Reads and writes system memory.\nHonestly you're more likely to crash your 3DS. Check source code for details";
 	manual[6] = "Encryption Handler\nPath: /crypt/\n Description: Uses native AES Encryption/Decryption Algorithms to do CBC/CTR/CTM. Check source code for details.";
-	manual[7] = "FAS Remote test path: \FAS\RemoteTest";
+	manual[2] = "FAStest Handler\nPath: /FAS\nTest: Send a request to FAS";
 	clearBottom();
 	printBottom("eManual page %i\n%s\n\nPress L for previous page or R for next page.\nPress X to change port or START to exit.",page,manual[page]);
 	gfxFlushBuffers();
